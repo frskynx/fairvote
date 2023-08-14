@@ -1,0 +1,37 @@
+.option {
+	width: 48%;
+	height: 150px;
+	text-align: center;
+	overflow: auto;
+	background-color: #bdf1ec;
+	float: left;
+	margin: 1%;
+	border-radius: 10px;
+	transition: ease 0.3s;
+	position: relative;
+}
+
+.option:hover {
+	background-color: #4dd6c9;
+}
+
+.text {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	transition: ease 0.3s;
+	color: #1f6879;
+}
+
+.option .text h3, .option .text p{
+	transition: ease 0.1s;
+}
+
+.option:hover .text h3, .option:hover .text p{
+	color: #ffffff;
+	transform: scale(1.1);
+}

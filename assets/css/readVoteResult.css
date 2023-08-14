@@ -1,0 +1,22 @@
+.option {
+	width: 48%;
+	height: 150px;
+	
+	overflow: auto;
+	float: left;
+	margin: 1%;
+	border-radius: 10px;
+	position: relative;
+}
+
+.text {
+	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	-ms-transform: translate(-10%, -50%);
+	transform: translate(-10%, -50%);
+	
+	color: #1f6879;
+}

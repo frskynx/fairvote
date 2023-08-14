@@ -1,0 +1,67 @@
+.home-btn {
+	max-width: 300px;
+}
+
+/* Floating Backgroud */
+.floating {
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition: ease 0.3s;
+}
+.floating:target {
+	backdrop-filter: blur(6px) saturate(100%);
+	-webkit-backdrop-filter: blur(6px) saturate(200%);
+	background-color: rgba(0, 0, 0, 0.4);
+
+	display: inline-block;
+	position: fixed;
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#card {
+	display: none;
+
+}
+
+
+
+#making:target #card,
+#vooting:target #card,
+#signin:target #card,
+#signup:target #card,
+#signup-succes:target #card {
+	border-radius: 10px;
+	display: block;
+	color: black;
+	background-color: white;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 350px;
+
+	animation-name: overlay-in;
+	animation-duration: 0.6s;
+	animation-timing-function: cubic-bezier(0, 0.74, 0.38, 1);
+}
+
+.text a , .wkwk{
+	text-decoration: none;
+}
+
+@keyframes overlay-in {
+	0% {
+		transform: translate(-50%, -80%);
+		opacity: 0%;
+	}
+	100% {
+		transform: translate(-50%, -50%);
+		opacity: 100%;
+	}
+}
